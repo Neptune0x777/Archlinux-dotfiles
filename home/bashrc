@@ -1,0 +1,21 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+PS1='[\u@\h \W]\$ '
+# PS1='[\w]\$ \e[0;37m>>\e[0m ' // prompt alternatif
+
+alias la="ls -la"
+alias ll="ls -l"
+
+alias bashrc="nvim ~/.bashrc"
+alias swayconf="nvim ~/.config/sway/config"
+# alias waybarconf="nvim ~/.config/waybar/config"
+alias waybarconfstyle="nvim ~/.config/waybar/style.css"
+alias alacritty="nvim ~/.config/alacritty/alacritty.yml"
+alias nvimconf="nvim ~/.config/nvim/init.vim"
